@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="353c37ce-c4a5-4b2d-975f-c71fd864b207" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task9/index.html" afterPath="$PROJECT_DIR$/task9/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task9/js/script.js" afterPath="$PROJECT_DIR$/task9/js/script.js" />
-    </list>
+    <list default="true" id="353c37ce-c4a5-4b2d-975f-c71fd864b207" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,12 +156,12 @@
       <workItem from="1548222726337" duration="45000" />
       <workItem from="1548222884043" duration="7802000" />
       <workItem from="1548306394669" duration="8929000" />
-      <workItem from="1548324553657" duration="7128000" />
+      <workItem from="1548324553657" duration="7329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23904000" />
+    <option name="totallyTimeSpent" value="24105000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
