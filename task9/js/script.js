@@ -190,5 +190,58 @@ window.addEventListener('DOMContentLoaded', function () {
     
     sendForm(form);
     sendForm(modalForm);
-
+    
+    // Slider
+    
+    let sliderIndex = 1,
+        sliderWrap = document.querySelector('.slider'),
+        slides = sliderWrap.querySelectorAll('.slider-item'),
+        dotsWrap = sliderWrap.querySelector('.slider-dots'),
+        dots = dotsWrap.querySelectorAll('.dot'),
+        prevBtn = sliderWrap.querySelector('.prev'),
+        nextBtn = sliderWrap.querySelector('.next');
+    
+    
+    function showSlide(sliderIndex) {
+        
+        if (sliderIndex < 1) {
+            sliderIndex = slides.length;
+        } else if (sliderIndex > slides.length) {
+            sliderIndex = 1;
+        }
+        
+        slides.forEach((item) => item.style.display = 'none');
+        dots.forEach((item) => item.classList.remove('dot-active'));
+        
+        slides[sliderIndex - 1].style.display = 'block';
+        dots[sliderIndex - 1].classList.add('dot-active');
+    };
+    
+    showSlide(sliderIndex);
+    
+    function plusSlide(n) {
+        showSlide(sliderIndex += n);
+    };
+    
+    function currentSlide(n) {
+        showSlide(sliderIndex = n);
+    };
+    
+    prevBtn.addEventListener('click', function () {
+        plusSlide(-1);
+    });
+    
+    nextBtn.addEventListener('click', function () {
+        plusSlide(1);
+    });
+    
+    dotsWrap.addEventListener('click', function (e) {
+        for (let i = 0; i < dots.length + 1; i++) {
+            let target = e.target;
+            if (target == dots[i - 1] && target.classList.contains('dot')) {
+                currentSlide(i);
+            }
+        }
+    });
+    
 });
