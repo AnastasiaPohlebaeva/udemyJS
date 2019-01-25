@@ -147,82 +147,53 @@ window.addEventListener('DOMContentLoaded', function () {
 
     let form = document.getElementsByTagName('form')[0],
         modalForm = document.getElementsByTagName('form')[1],
-        inputs = form.getElementsByTagName('input'),
-        modalInputs = modalForm.getElementsByTagName('input'),
         statMsg = document.createElement('div');
 
     statMsg.classList.add('status');
     
-    modalForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        modalForm.appendChild(statMsg);
-        console.log(modalForm);
-        
-        let request = new XMLHttpRequest();
-        request.open('POST', 'server.php');
-        request.setRequestHeader('Content-Type', 'application/x-www-formurlencoded');
-        
-        let formData = new FormData(modalForm);
-        console.log(formData);
-        let obj = {};
-        formData.forEach(function(value, key) {
-            obj[key] = value;
-        });
-        console.log(obj);
-        let json = JSON.stringify(obj);
-        console.log(json);
-        request.send(json);
-        
-        
-        request.addEventListener('readystatechange', function () {
-            if (request.readyState < 4) {
-                statMsg.innerHTML = msg.loading;
-            } else if (request.readyState === 4 && request.status == 200) {
-                statMsg.innerHTML = msg.success;
-            } else {
-                statMsg.innerHTML = msg.error;
+    function sendForm(element) {
+        element.addEventListener('submit', function (e) {
+            e.preventDefault();
+            element.appendChild(statMsg);
+            let formData = new FormData(element);
+            
+            function postData(data) {
+                return new Promise(function(resolve, reject) {
+                    let request = new XMLHttpRequest();
+                    request.open('POST', 'server.php');
+                    request.setRequestHeader('Content-Type', 'application/x-www-formurlencoded');
+                    
+                    request.onreadystatechange = function () {
+                        if (request.readyState < 4) {
+                            resolve();
+                        } else if (request.readyState === 4 && request.status == 200) {
+                            resolve();
+                        } else {
+                            reject();
+                        }
+                    };
+                    
+                    request.send(data);
+                });
             }
-        });
-        
-        for (let i = 0; i < modalInputs.length; i++) {
-            modalInputs[i].value = '';
-        };
-    });
+            
+            function clearInputs() {
+                let inputs = element.getElementsByTagName('input');
+                for (let i = 0; i < inputs.length; i++) {
+                    inputs[i].value = '';
+                };
+            }
+            
+            postData(formData)
+                .then(() => statMsg.innerHTML = msg.loading)
+                .then(() => statMsg.innerHTML = msg.success)
+                .catch(() => statMsg.innerHTML = msg.error)
+                .then(() => clearInputs())
+            
+        })
+    };
     
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        form.appendChild(statMsg);
-        console.log(form);
-
-        let request = new XMLHttpRequest();
-        request.open('POST', 'server.php');
-        request.setRequestHeader('Content-Type', 'application/x-www-formurlencoded');
-
-        let formData = new FormData(form);
-        console.log(formData);
-        let obj = {};
-        formData.forEach(function(value, key) {
-            obj[key] = value;
-        });
-        console.log(obj);
-        let json = JSON.stringify(obj);
-        console.log(json);
-        request.send(json);
-
-
-        request.addEventListener('readystatechange', function () {
-            if (request.readyState < 4) {
-                statMsg.innerHTML = msg.loading;
-            } else if (request.readyState === 4 && request.status == 200) {
-                statMsg.innerHTML = msg.success;
-            } else {
-                statMsg.innerHTML = msg.error;
-            }
-        });
-
-        for (let i = 0; i < inputs.length; i++) {
-            inputs[i].value = '';
-        };
-    });
+    sendForm(form);
+    sendForm(modalForm);
 
 });
