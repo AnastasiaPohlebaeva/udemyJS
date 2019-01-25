@@ -106,5 +106,35 @@ window.addEventListener('DOMContentLoaded', function () {
         more.classList.remove('more-splash');
         document.body.style.overflow = '';
     });
-    
+
+    let tabsWrrapper = document.querySelector('.info'),
+        moreBtns = tabsWrrapper.querySelectorAll('.description-btn');
+
+    function showPopup (a) {
+        overlay.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    };
+
+    tabsWrrapper.addEventListener('click', function (event) {
+        let target = event.target;
+        if (target && target.classList.contains('description-btn')) {
+            for (let i = 0; i < moreBtns.length; i++) {
+                if (target == moreBtns[i]) {
+                    showPopup(i);
+                    break;
+                }
+            }
+        }
+    });
+
+    /*
+    Второе задание
+    <input id="age" value="30">
+    let age = document.getElementById('age');
+    function showUser(surname, name) {
+        alert("Пользователь " + surname + " " + name + ", его возраст " + this.value);
+    }
+    showUser.apply(age, ["Ivan", "Popov"]);
+    */
+
 });
