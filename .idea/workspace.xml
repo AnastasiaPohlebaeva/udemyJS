@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="353c37ce-c4a5-4b2d-975f-c71fd864b207" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task9/index.html" afterPath="$PROJECT_DIR$/task9/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task9/js/script.js" afterPath="$PROJECT_DIR$/task9/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task9/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-987">
-              <caret line="136" column="39" lean-forward="false" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="39" />
+            <state relative-caret-position="560">
+              <caret line="164" column="35" lean-forward="false" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -27,8 +26,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task9/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="244" column="7" lean-forward="false" selection-start-line="244" selection-start-column="7" selection-end-line="244" selection-end-column="7" />
+            <state relative-caret-position="414">
+              <caret line="286" column="78" lean-forward="false" selection-start-line="286" selection-start-column="78" selection-end-line="286" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -174,12 +173,12 @@
       <workItem from="1548306394669" duration="9271000" />
       <workItem from="1548389333448" duration="9556000" />
       <workItem from="1548403923396" duration="597000" />
-      <workItem from="1548405259625" duration="7225000" />
+      <workItem from="1548405259625" duration="8648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34496000" />
+    <option name="totallyTimeSpent" value="35919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -349,16 +348,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task9/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-987">
-          <caret line="136" column="39" lean-forward="false" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="39" />
+        <state relative-caret-position="560">
+          <caret line="164" column="35" lean-forward="false" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/task9/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="244" column="7" lean-forward="false" selection-start-line="244" selection-start-column="7" selection-end-line="244" selection-end-column="7" />
+        <state relative-caret-position="414">
+          <caret line="286" column="78" lean-forward="false" selection-start-line="286" selection-start-column="78" selection-end-line="286" selection-end-column="78" />
           <folding />
         </state>
       </provider>
