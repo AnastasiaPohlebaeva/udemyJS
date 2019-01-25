@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="353c37ce-c4a5-4b2d-975f-c71fd864b207" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task12/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task12/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task9/js/script.js" afterPath="$PROJECT_DIR$/task9/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,27 +16,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task9/index.html">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/task12/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="56" column="51" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="51" />
+            <state relative-caret-position="187">
+              <caret line="11" column="88" lean-forward="false" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/task9/js/script.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task12/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="132" column="18" lean-forward="false" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
+            <state relative-caret-position="136">
+              <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +57,8 @@
         <option value="$PROJECT_DIR$/task7/js/main.js" />
         <option value="$PROJECT_DIR$/task8/js/script.js" />
         <option value="$PROJECT_DIR$/task9/js/script.js" />
+        <option value="$PROJECT_DIR$/task12/index.html" />
+        <option value="$PROJECT_DIR$/task12/script.js" />
       </list>
     </option>
   </component>
@@ -63,7 +76,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="749" />
     <option name="y" value="4" />
     <option name="width" value="840" />
@@ -95,13 +108,7 @@
             <path>
               <item name="udemyProj" type="b2602c69:ProjectViewProjectNode" />
               <item name="udemyProj" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="task9" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="udemyProj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="udemyProj" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="task9" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="task12" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -144,15 +151,15 @@
       <workItem from="1548222726337" duration="45000" />
       <workItem from="1548222884043" duration="7802000" />
       <workItem from="1548306394669" duration="9271000" />
-      <workItem from="1548389333448" duration="1902000" />
+      <workItem from="1548389333448" duration="4061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19020000" />
+    <option name="totallyTimeSpent" value="21179000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14977308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -259,6 +266,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/task9/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="124" column="17" lean-forward="true" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/task9/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -267,10 +282,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task9/js/script.js">
+    <entry file="file://$PROJECT_DIR$/task12/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="132" column="18" lean-forward="false" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
+        <state relative-caret-position="136">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task12/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="88" lean-forward="false" selection-start-line="11" selection-start-column="88" selection-end-line="11" selection-end-column="88" />
           <folding />
         </state>
       </provider>

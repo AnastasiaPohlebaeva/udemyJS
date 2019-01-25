@@ -118,9 +118,9 @@ window.addEventListener('DOMContentLoaded', function () {
     tabsWrrapper.addEventListener('click', function (event) {
         let target = event.target;
         if (target && target.classList.contains('description-btn')) {
-            for (let i = 0; i < moreBtns.length; i++) {
-                if (target == moreBtns[i]) {
-                    showPopup(i);
+            for (let item of moreBtns) {
+                if (target == item) {
+                    showPopup(item);
                     break;
                 }
             }
